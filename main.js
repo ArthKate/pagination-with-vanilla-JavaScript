@@ -52,6 +52,7 @@ const body = document.querySelector('body');
 
 function displayItems(items, pageNumber) {
   //calculates items to display based on current page
+  const itemsPerPage = 6
   const startIndex = itemsPerPage * (pageNumber - 1);
   const endIndex = startIndex + itemsPerPage;
   const paginated_items = items.slice( startIndex, endIndex);
